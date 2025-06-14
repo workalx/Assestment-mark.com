@@ -26,24 +26,25 @@
 
 <div class="container">
   <div class="button-container">
-    <button class="button" onclick="document.querySelector('.homepage').scrollIntoView({ behavior: 'smooth' });">
-        <i class="fas fa-home"></i>
+    <button class="button" onclick="document.querySelector('.homepage').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13 19H19V9.97815L12 4.53371L5 9.97815V19H11V13H13V19ZM21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20Z"></path></svg>
     </button>
-    <button class="button" onclick="document.querySelector('.characters').scrollIntoView({ behavior: 'smooth' });">
-        <i class="fas fa-users"></i>
+    <button class="button" onclick="document.querySelector('.characters').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 22H18V20C18 18.3431 16.6569 17 15 17H9C7.34315 17 6 18.3431 6 20V22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13ZM12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"></path></svg>
     </button>
-    <button class="button" onclick="document.querySelector('.parent-container').scrollIntoView({ behavior: 'smooth' });">
-        <i class="fas fa-lightbulb"></i>
+    <button class="button" onclick="document.querySelector('.parent-container').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2 4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4ZM4 5V19H20V5H4ZM7 8H17V11H15V10H13V14H14.5V16H9.5V14H11V10H9V11H7V8Z"></path></svg>
     </button>
-    <button class="button" onclick="document.querySelector('#story-block').scrollIntoView({ behavior: 'smooth' });">
-        <i class="fas fa-book"></i>
+    <button class="button" onclick="document.querySelector('.new-card-container').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2.9918 21C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918ZM20 15V5H4V19L14 9L20 15ZM20 17.8284L14 11.8284L6.82843 19H20V17.8284ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+    </button>
+    <button class="button" onclick="document.querySelector('#story-block').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.7279 9.57627L14.3137 8.16206L5 17.4758V18.89H6.41421L15.7279 9.57627ZM17.1421 8.16206L18.5563 6.74785L17.1421 5.33363L15.7279 6.74785L17.1421 8.16206ZM7.24264 20.89H3V16.6473L16.435 3.21231C16.8256 2.82179 17.4587 2.82179 17.8492 3.21231L20.6777 6.04074C21.0682 6.43126 21.0682 7.06443 20.6777 7.45495L7.24264 20.89Z"></path></svg>
     </button>
   </div>
 </div>
 
-<section class="animate-on-scroll">
-  <h1>Hello in my website</h1>
-</section>
+
 
 <header>
   <h1>Mark Khalus</h1>
@@ -63,79 +64,85 @@
     <p class="down">The men who were running from place to place in the past found a farm where they could work and live. This is a short paragraph about the book "Of Mice and Men" by John Steinbeck.</p>
   </div>
 </div>
-
+<br><br><br><br>
 <div class="characters animate-on-scroll slide-in-right">
   <div class="card">
     <div class="card__front">Lennie</div>
     <div class="card__content">
       <p class="card__description">He is strong but mentally challenged. He likes soft things and is a friend to George.</p>
-      <p class="card__quote">“I like to pet nice things with my fingers, soft things.” (p. 90)</p>
     </div>
   </div>
   <div class="card">
     <div class="card__front">George</div>
     <div class="card__content">
       <p class="card__description">Smart and caring, George looks after Lennie and dreams of a better life.</p>
-      <p class="card__quote">“I told his old lady I'd take care of him.”</p>
     </div>
   </div>
   <div class="card">
     <div class="card__front">Slim</div>
     <div class="card__content">
       <p class="card__description">A wise worker on the farm who understands George's decisions.</p>
-      <p class="card__quote">“Never you mind,” said Slim. “A guy got to sometimes.” (p.107)</p>
     </div>
   </div>
 </div>
-
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
 <div class="parent-container">
   <div class="parent animate-on-scroll slide-in-right">
-    <div class="cardsa">
-      <div class="glass"></div>
-      <div class="contenting">
-        <span class="title">Dreams</span><br>
-        <span class="text1">This novel shows how dreams give hope and motivation, bringing people closer.</span>
-        <span class="text2">“An' live off the fatta the lan',” Lennie shouted, “An' have rabbits. Go on, George!”</span>
-      </div>
+    <div class="card-parent">
+      <div class="parent-title">Dreams</div>
+      <div class="parent-text short">This novel shows how dreams give hope and motivation, bringing people closer.</div>
+      <div class="parent-text full">“An' live off the fatta the lan',” Lennie shouted, “An' have rabbits. Go on, George!”</div>
+      <div class="view-more"><button class="view-more-button">View more</button></div>
     </div>
-    <div class="view-more"><button class="view-more-button">View more</button></div>
   </div>
   <div class="parent animate-on-scroll slide-in-left">
-    <div class="cardsa">
-      <div class="glass"></div>
-      <div class="contenting">
-        <span class="title">Loneliness</span><br>
-        <span class="text1">Almost everyone is lonely, even when surrounded by others.</span>
-        <span class="text2">“A guy needs somebody—to be near him. A guy goes nuts if he ain't got nobody.”</span>
-      </div>
+    <div class="card-parent">
+      <div class="parent-title">Loneliness</div>
+      <div class="parent-text short">Almost everyone is lonely, even when surrounded by others.</div>
+      <div class="parent-text full">“A guy needs somebody—to be near him. A guy goes nuts if he ain't got nobody.”</div>
+      <div class="view-more"><button class="view-more-button">View more</button></div>
     </div>
-    <div class="view-more"><button class="view-more-button">View more</button></div>
   </div>
 </div>
-
-<div class="new-card">
-  <img src="img/1.jpg" alt="Rabbit Symbolism">
-  <div class="new-card__content">
-    <p class="new-card__description">The rabbit symbolizes dreams, while the shadow implies death—central to the novel's theme.</p>
+<br><br><br><br>
+<div class="new-card-container animate-on-scroll">
+  <div class="new-card new-card1">
+    <div class="new-card__front">
+      <img src="img/1.jpg" alt="Rabbit Symbolism">
+    </div>
+    <div class="new-card__back">
+      <p class="new-card__description">The pictures show up the rabbit what mean dreams and the shadow like death. That is significant to the novel because it showed the dream like rabbit that have gas shadow would mean that life and something very easy to die</p>
+    </div>
+  </div>
+  <div class="new-card new-card2">
+    <div class="new-card__front">
+      <img src="img/2.jpg" alt="Challenging Life">
+    </div>
+    <div class="new-card__back">
+      <p class="new-card__description">Yeah illustration show the book lesson that we tried to come to the dreams but there life always raining windy and challenge.</p>
+    </div>
+  </div>
+  <div class="new-card new-card3">
+    <div class="new-card__front">
+      <img src="img/3.jpeg" alt="Friendship and Dreams">
+    </div>
+    <div class="new-card__back">
+      <p class="new-card__description">The image shows the beauty of dreams and friendship found in the novel.</p>
+    </div>
   </div>
 </div>
-<div class="new-card">
-  <img src="img/2.jpg" alt="Challenging Life">
-  <div class="new-card__content">
-    <p class="new-card__description">This illustration reflects the struggle toward dreams, facing life’s storms.</p>
-  </div>
-</div>
-<div class="new-card">
-  <img src="img/3.jpeg" alt="Friendship and Dreams">
-  <div class="new-card__content">
-    <p class="new-card__description">The image shows the beauty of dreams and friendship found in the novel.</p>
-  </div>
-</div>
-
-<div id="story-block" class="card1">
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<div id="story-block" class="card1 animate-on-scroll">
   <div class="card-info">
-    <h2 class="title">Hi I'm Mark and I will tell you a short story about the novel "Of Mice and Men"</h2>
-    <p>This novel demonstrates strong, trusting relationships even among strangers in a harsh world. It reminds us of humanity and the fight to remain compassionate.</p>
+    <span class="card-info-title">Reflection</span>
+    <span class="card-info-full">From the very beginning I saw a strong relationship between Linnie and George, even though they are not family but two strangers. I saw that even in such a hard and severe life there can be so much openness and trust between people.
+That novel is a big example of a real relationship, which is so hard to find now. And one more explanation for my big question why everyone is so closed from each other. That novel shows that even at a time when life was so hard that people were fighting for their lives, they were still human to each other. Just one person cannot change the life that is hard — true from the novel.</span>
   </div>
 </div>
 
