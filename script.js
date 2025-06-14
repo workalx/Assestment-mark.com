@@ -1,5 +1,28 @@
 // Анімація появи елементів при скролі
 document.addEventListener('DOMContentLoaded', () => {
+  // Анімація кнопок навігації
+  const buttons = document.querySelectorAll('.button-container .button');
+  buttons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+      const svg = button.querySelector('svg');
+      svg.style.transform = 'scale(1.2)';
+      svg.style.transition = 'transform 0.3s ease';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      const svg = button.querySelector('svg');
+      svg.style.transform = 'scale(1)';
+    });
+
+    button.addEventListener('click', () => {
+      const svg = button.querySelector('svg');
+      svg.style.transform = 'scale(0.8)';
+      setTimeout(() => {
+        svg.style.transform = 'scale(1)';
+      }, 200);
+    });
+  });
+
   const animatedItems = document.querySelectorAll('.animate-on-scroll');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -50,6 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
       card.classList.toggle('expanded');
       button.textContent = card.classList.contains('expanded') ? 'View less' : 'View more';
     });
+  });
+
+  // Рандомне позиціонування new-card у контейнері
+  const cards = document.querySelectorAll('.new-card-container .new-card');
+  cards.forEach(card => {
+    const x = Math.floor(Math.random() * 120) - 60; // від -60 до +60px
+    const y = Math.floor(Math.random() * 120);     // від 0 до +120px
+    card.style.transform = `translate(${x}px, ${y}px)`;
   });
 });
 
